@@ -1,4 +1,9 @@
 import streamlit as st
 
-st.title("Titulo de Prueba")
-st.header("Hola")
+st.title("Pantalla Inicial")
+
+# Botones para navegar
+if st.button("Ir a Albarán"):
+    st.session_state.pantalla = "albaran"
+if st.button("Ir a Factura"):
+    st.session_state.pantalla = "factura"
